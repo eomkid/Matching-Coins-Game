@@ -9,5 +9,5 @@ if __name__ == "__main__":
     """This file runs the game. It creates the player objects and manages the game loop and rules."""
     play_state = ""
 
-    while play_state != "n".lower():
-        pass
+    while play_state != "N".upper():
+        play_state(input("Would you like to play a game of Coin Toss (Y/N)?"))
