@@ -15,7 +15,13 @@ class Player:
         self.__coin = coin.Coin()
 
     def toss_coin(self):
-        pass
+        """Runs the toss method from the coin class to get a random value of 0 or 1"""
+        self.__coin.toss()
+
+    def get_coin_side(self):
+        return self.__coin.get_sideup()
 
 
 eom = Player()
+eom.toss_coin()
+print(eom.get_coin_side())
