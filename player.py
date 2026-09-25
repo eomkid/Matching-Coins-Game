@@ -4,7 +4,7 @@ Description: This file contains the could necessary for the player in the main g
 Date: September 27, 2026"""
 
 import coin
-"""The coin neccessary for the player to be able to interact with coin objects"""
+"""The coin module neccessary for the player to be able to interact with coin objects"""
 
 
 class Player:
