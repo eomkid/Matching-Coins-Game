@@ -20,8 +20,3 @@ class Player:
 
     def get_coin_side(self):
         return self.__coin.get_sideup()
-
-
-eom = Player()
-eom.toss_coin()
-print(eom.get_coin_side())
