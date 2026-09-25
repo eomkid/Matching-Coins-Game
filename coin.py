@@ -9,4 +9,5 @@ class Coin:
     """This class represents a single, tossable coin. It is only aware of it's own state (Heads or Tails)."""
 
     def __init__(self, __sideup):
-        self
+        """Initialization of sideup attribute which will be used to determine the face of the coin given to the player."""
+        self.__sideup = 0
