@@ -1,6 +1,7 @@
 """Progam: Matching Coins Game - Coin Module
 Author: Brandon Barrett
-Description: This file contains the code for the coin class present in the main game"""
+Description: This file contains the code for the coin class present in the main game
+Date: September 27, 2026"""
 
 from random import randint
 
