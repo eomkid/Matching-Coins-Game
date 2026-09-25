@@ -13,9 +13,11 @@ class Coin:
         self.__sideup = 0
 
     def toss(self):
+        """Simulates tossing the coin returning a value of 0 or 1."""
         self.__sideup = randint(0, 1)
 
     def get_sideup(self):
+        """Based on the current __sideup attribute determines if the coin is currently Heads(0) or Tails(1)"""
         if self.__sideup == 0:
             self.__sideup = "Heads"
         else:
