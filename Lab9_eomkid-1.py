@@ -26,7 +26,25 @@ if __name__ == "__main__":
             return player1_coin, player2_coin
 
         player1_coin, player2_coin = coin_flip()
-        print("Tossing...")
+
+        print("Tossing...\n")
 
         print(
             f"{player1.get_name()} got {player1_coin} \n{player2.get_name()} got {player2_coin}")
+
+        if player1_coin == player2_coin:
+            print(f"And the Winner of this round is {player1.get_name()}!!!\n")
+            player1.win_coin()
+            player2.lose_coin()
+            print(
+                f"Since {player1.get_name()} won, they now have {player1.get_wallet()} coins!")
+            print(
+                f"Since {player2.get_name()} lost, they now have {player2.get_wallet()} coins.")
+        else:
+            print(f"And the Winner of this round is {player2.get_name()}!!!\n")
+            player2.win_coin()
+            player1.lose_coin()
+            print(
+                f"Since {player2.get_name()} won, they now have {player2.get_wallet()} coins!")
+            print(
+                f"Since {player1.get_name()} lost, they now have {player1.get_wallet()} coins.")
