@@ -24,6 +24,7 @@ if __name__ == "__main__":
 
         player1_coin, player2_coin = coin_flip()
 
+        print("\nAlright players toss your coins!...")
         print("Tossing...\n")
 
         print(
@@ -47,6 +48,17 @@ if __name__ == "__main__":
                 f"Since {player1.get_name()} lost, they now have {player1.get_wallet()} coins.")
 
         play_state = (
-            input("Would you like to play a game of Coin Toss (Y/N)?\n"))
-        print("\nAlright players toss your coins!...")
+            input("\nWould you like to play a game of Coin Toss (Y/N)?\n"))
+
+    print("\nFinal Totals")
+    print(f"{player1.get_name()}: {player1.get_wallet()}")
+    print(f"{player2.get_name()}: {player2.get_wallet()}\n")
+
+    if player1.get_wallet() > player2.get_wallet():
+        print(f"The winner is {player1.get_name()}\n")
+    elif player2.get_wallet() > player1.get_wallet():
+        print(f"The winner is {player2.get_name()}\n")
+    else:
+        print("You tied maybe you should've played another round\n")
+
     print("Game over")
