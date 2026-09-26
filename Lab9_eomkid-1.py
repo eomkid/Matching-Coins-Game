@@ -7,17 +7,14 @@ import player
 
 if __name__ == "__main__":
     """This file runs the game. It creates the player objects and manages the game loop and rules."""
-    play_state = ""
+    print("~~~Coin Matching Game~~~")
+    play_state = (
+        input("Would you like to play a game of Coin Toss (Y/N)?\n"))
 
     player1 = player.Player()
     player2 = player.Player(name="Player2")
-    print("~~~Coin Matching Game~~~")
 
     while play_state.upper() != "N":
-        play_state = (
-            input("Would you like to play a game of Coin Toss (Y/N)?\n"))
-        print("\nAlright players toss your coins!...")
-
         def coin_flip():
             player1.toss_coin()
             player2.toss_coin()
@@ -48,3 +45,8 @@ if __name__ == "__main__":
                 f"Since {player2.get_name()} won, they now have {player2.get_wallet()} coins!")
             print(
                 f"Since {player1.get_name()} lost, they now have {player1.get_wallet()} coins.")
+
+        play_state = (
+            input("Would you like to play a game of Coin Toss (Y/N)?\n"))
+        print("\nAlright players toss your coins!...")
+    print("Game over")
