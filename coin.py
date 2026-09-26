@@ -18,7 +18,6 @@ class Coin:
     def get_sideup(self):
         """Based on the current __sideup attribute determines if the coin is currently Heads(0) or Tails(1)"""
         if self.__sideup == 0:
-            self.__sideup = "Heads"
+            return "Heads"
         else:
-            self.__sideup = "Tails"
-        return self.__sideup
+            return "Tails"
