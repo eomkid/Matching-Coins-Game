@@ -16,6 +16,7 @@ if __name__ == "__main__":
 
     while play_state.upper() != "N":
         def coin_flip():
+            """Flips both players coins and returns their values as heads or tails"""
             player1.toss_coin()
             player2.toss_coin()
             player1_coin = player1.get_coin_side()
